@@ -1,0 +1,107 @@
+@import "src/scss/settings/_colors.scss";
+
+header {
+  width: 100%;
+  height: 963px;
+  display: flex;
+  justify-content: space-between;
+  .headerImage {
+    width: 1368px;
+    height: 963px;
+    background-image: url("../../assets/Hero_Image.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 66px;
+  }
+  .headerContent {
+    display: flex;
+    align-items: center;
+    margin-right: 275px;
+    .headerTitleAndButtonsBox {
+      width: 676px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        width: 676px;
+        height: 107px;
+        font-size: 38px;
+        letter-spacing: -0.76px;
+        line-height: 55px;
+        font-weight: 400;
+        text-align: center;
+        color: #3C3C3C;
+      }
+      .headerDecorationImage {
+        width: 253px;
+        height: 33px;
+        background-image: url("../../assets/Decoration.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 25px;
+        margin-bottom: 65px;
+      }
+      .headerButtonBox {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .headerButton {
+          width: 320px;
+          height: 100%;
+          border: 0.75px solid #3C3C3C;
+          text-align: center;
+          font-size: 36px;
+          line-height: 45px;
+          font-weight: 300;
+          text-decoration: none;
+          color: #3C3C3C;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.loginRegistrationAndNavigation {
+  width: 683px;
+  height: 95px;
+  position: absolute;
+  top: 37px;
+  right: 142px;
+  .loginAndRegistration {
+    text-align: right;
+    position: relative;
+    top: -24px;
+    .logAndRegiLink {
+      text-decoration: none;
+      margin-left: 15px;
+      color: #737373;
+      font-size: 14px;
+      line-height: 85px;
+      padding: 10px;
+      &:hover {
+        border: 0.75px solid #FAD648;
+      }
+    }
+  }
+  .navigation {
+    text-align: right;
+    position: relative;
+    top: -26px;
+    a {
+      font-size: 18px;
+      line-height: 24px;
+      margin-left: 15px;
+      padding: 10px;
+      color: #3C3C3C;
+      &:hover {
+        border: 0.75px solid #3C3C3C;
+      }
+    }
+  }
+}
