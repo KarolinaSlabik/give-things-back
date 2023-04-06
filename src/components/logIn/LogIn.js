@@ -5,4 +5,4 @@ const LogIn = () => {
     </>
 };
 
-export { LogIn }
+export default LogIn

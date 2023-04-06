@@ -4,9 +4,9 @@ import {
     Route,
     Routes,
 } from 'react-router-dom';
-import { Home } from './components/home/Home';
-import { LogIn } from './components/logIn/LogIn';
-import { SignUp } from './components/signUp/SignUp';
+import Home from './components/home/Home';
+import LogIn from './components/logIn/LogIn';
+import SignUp from './components/signUp/SignUp';
 
 const App = () => {
     return <>
