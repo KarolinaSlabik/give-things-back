@@ -1,0 +1,111 @@
+@import "src/scss/settings/_colors.scss";
+
+.FourEasyStepsSection {
+  width: 1900px;
+  height: 624px;
+  margin-top: 55px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .FourEasyStepsTitle {
+    width: 416px;
+    height: 52px;
+    color: #3C3C3C;
+    font-size: 38px;
+    line-height: 55px;
+    letter-spacing: -0.76px;
+    text-align: center;
+  }
+  .FourEasyStepsDecoration {
+    width: 253px;
+    height: 33px;
+    background-image: url("../../assets/Decoration.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 25px;
+    margin-bottom: 34px;
+  }
+  .FourEasyStepsContainer {
+    width: 100%;
+    height: 325px;
+    background-color: #F0F1F1;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .FourEasyStepsBigBox {
+      width: 1072px;
+      height: 174px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .FourEasyStepsBox {
+        width: 136px;
+        height: 172px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .FourEasyStepsImage {
+          width: 83px;
+          height: 83px;
+          background-image: url("../../assets/Icon-2@2x.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .t-shirtImage {
+          background-image: url("../../assets/Icon-1@2x.png");
+        }
+        .bagImage {
+          background-image: url("../../assets/Icon-2@2x.png");
+        }
+        .magnifierImage {
+          background-image: url("../../assets/Icon-3@2x.png");
+        }
+        .reloadImage {
+          background-image: url("../../assets/Icon-4@2x.png");
+        }
+        .stepsTitle {
+          width: 138px;
+          font-size: 18px;
+          line-height: 24px;
+          text-align: center;
+          color: #3C3C3C;
+          margin: 8px auto;
+        }
+        .diff_easySteps {
+          line-height: 20px;
+        }
+        .stepsUnderline {
+          width: 70px;
+          height: 1px;
+          background-color: #707070;
+        }
+        .stepsText {
+          font-size: 16px;
+          line-height: 18px;
+          text-align: center;
+          color: #3C3C3C;
+          margin-top: 8px;
+        }
+      }
+      .theBiggestBox {
+        width: 164px;
+      }
+    }
+  }
+  .FourEasyStepsButton {
+    width: 320px;
+    height: 120px;
+    border: 0.75px solid #3C3C3C;
+    text-align: center;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #3C3C3C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

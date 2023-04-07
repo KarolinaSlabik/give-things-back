@@ -13,7 +13,7 @@ const HomeHeader = () => {
                     </div>
                     <div className="navigation">
                         <LinkScroll to="/">Start</LinkScroll>
-                        <LinkScroll to="/">O co chodzi?</LinkScroll>
+                        <LinkScroll to="whatIsItAbout">O co chodzi?</LinkScroll>
                         <LinkScroll to="/">O nas</LinkScroll>
                         <LinkScroll to="/">Fundacja i organizacje</LinkScroll>
                         <LinkScroll to="/">Kontakt</LinkScroll>
