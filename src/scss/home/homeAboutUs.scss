@@ -1,0 +1,70 @@
+@import "src/scss/settings/_colors.scss";
+
+.aboutUsSection {
+  width: 100%;
+  height: 935px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+  .aboutUsTextContainer {
+    width: 50%;
+    height: 935px;
+    background-color: #F0F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .aboutUsTextBox {
+      width: 656px;
+      height: 564px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .aboutUsTitle {
+        width: 100px;
+        height: 52px;
+        font-size: 38px;
+        line-height: 55px;
+        letter-spacing: -0.76px;
+        color: #3C3C3C;
+        text-align: center;
+        margin-bottom: 26px;
+      }
+      .decorationElement {
+        width: 253px;
+        height: 33px;
+        background-image: url("../../assets/Decoration.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 55px;
+      }
+      .aboutUsText {
+        width: 656px;
+        height: 209px;
+        color: #3C3C3C;
+        font-size: 30px;
+        line-height: 54px;
+        letter-spacing: -0.6px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .aboutUsSignature {
+        width: 209px;
+        height: 149px;
+        background-image: url("../../assets/Signature.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        left: 225px;
+      }
+    }
+  }
+
+  .aboutUsImage {
+    width: 50%;
+    height: 935px;
+    background-image: url("../../assets/People@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -14,7 +14,7 @@ const HomeHeader = () => {
                     <div className="navigation">
                         <LinkScroll to="/">Start</LinkScroll>
                         <LinkScroll to="whatIsItAbout">O co chodzi?</LinkScroll>
-                        <LinkScroll to="/">O nas</LinkScroll>
+                        <LinkScroll to="aboutUs">O nas</LinkScroll>
                         <LinkScroll to="/">Fundacja i organizacje</LinkScroll>
                         <LinkScroll to="/">Kontakt</LinkScroll>
                     </div>
