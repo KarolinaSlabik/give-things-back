@@ -37,7 +37,7 @@ const Home4EasySteps = () => {
                     </div>
                 </div>
             </div>
-            <LinkRouter to="logowanie" className="FourEasyStepsButton">ODDAJ RZECZY</LinkRouter>
+            <LinkRouter to="logowanie" className="FourEasyStepsButton">ODDAJ<br></br> RZECZY</LinkRouter>
         </ElementScroll>
     </>
 };

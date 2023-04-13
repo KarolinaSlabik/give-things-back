@@ -1,0 +1,158 @@
+@import "src/scss/settings/_colors.scss";
+
+.ContactSection {
+  width: 100%;
+  height: 1026px;
+  background-image: url("../../assets/Background Image@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .ContactTransparentApla {
+    width: 100%;
+    height: 1026px;
+    background-color: #FFFFFFC9;
+    .ContactContainer {
+      width: 528px;
+      height: 498px;
+      position: relative;
+      left: 64.7%;
+      top: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .ContactTitle {
+        width: 358px;
+        height: 52px;
+        font-size: 38px;
+        line-height: 55px;
+        letter-spacing: -0.76px;
+        color: #3C3C3C;
+        text-align: center;
+      }
+      .ContactDecorations {
+        width: 253px;
+        height: 33px;
+        background-image: url("../../assets/Decoration.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 25px;
+      }
+      .ContactForm {
+        width: 528px;
+        height: 327px;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .inputBigBox {
+          width: 528px;
+          height: 62px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 40px;
+          .inputBox {
+            width: 256px;
+            height: 62px;
+            .nameAndEmailLabel {
+              width: 131px;
+              height: 22px;
+              font-size: 16px;
+              font-weight: 600;
+              color: #3C3C3C;
+            }
+            .nameAndEmailInput {
+              width: 254px;
+              height: 28px;
+              margin-top: 12px;
+              border: none;
+              border-bottom: 0.75px solid #3C3C3C;
+              font-size: 18px;
+              &:focus {
+                outline: none;
+              }
+              &::placeholder {
+                color: #3C3C3C26;
+              }
+            }
+          }
+        }
+        .textareaBigBox {
+          width: 528px;
+          height: 135px;
+          .textareaLabel {
+            font-size: 16px;
+          }
+          #textArea {
+            width: 528px;
+            height: 97px;
+            margin-top: 12px;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -0.36px;
+            color: #3C3C3C26;
+            border: none;
+            border-bottom: 0.75px solid #3C3C3C;
+            resize: none;
+            margin-bottom: 40px;
+            &::placeholder {
+              color: #3C3C3C26;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+          .inputSubmit {
+            float: right;
+            padding: 13px 53px;
+            font-size: 18px;
+            font-weight: 300;
+            color: #000000;
+            background-color: white;
+            border: 0.75px solid #3C3C3C;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    width: calc(100% - 284px);
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: -49px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .footerContainer {
+      //width: 872px;
+      width: calc(50% + 104px);
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .copyrightText {
+        font-size: 18px;
+        color: #3C3C3C;
+      }
+      .socialMediaIconBox {
+        width: 80px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .socialMediaIcon {
+          width: 30px;
+          height: 30px;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .FacebookIcon {
+          background-image: url("../../assets/Facebook@2x.png");
+        }
+        .InstagramIcon {
+          background-image: url("../../assets/Instagram@2x.png");
+        }
+      }
+    }
+  }
+}

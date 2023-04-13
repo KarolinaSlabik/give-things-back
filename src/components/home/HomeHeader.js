@@ -15,8 +15,8 @@ const HomeHeader = () => {
                         <LinkScroll to="/">Start</LinkScroll>
                         <LinkScroll to="whatIsItAbout">O co chodzi?</LinkScroll>
                         <LinkScroll to="aboutUs">O nas</LinkScroll>
-                        <LinkScroll to="/">Fundacja i organizacje</LinkScroll>
-                        <LinkScroll to="/">Kontakt</LinkScroll>
+                        <LinkScroll to="whoWeHelp">Fundacja i organizacje</LinkScroll>
+                        <LinkScroll to="homeContact">Kontakt</LinkScroll>
                     </div>
                 </div>
                 <div className="headerTitleAndButtonsBox">
@@ -26,7 +26,7 @@ const HomeHeader = () => {
                     </h1>
                     <div className="headerDecorationImage"></div>
                     <div className="headerButtonBox">
-                        <LinkRouter to="logowanie" className="headerButton">ODDAJ RZECZY</LinkRouter>
+                        <LinkRouter to="logowanie" className="headerButton">ODDAJ<br></br> RZECZY</LinkRouter>
                         <LinkRouter to="logowanie" className="headerButton">ZORGANIZUJ ZBIÓRKĘ</LinkRouter>
                     </div>
                 </div>
