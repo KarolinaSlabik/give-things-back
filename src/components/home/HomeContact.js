@@ -26,7 +26,7 @@ const HomeContact = () => {
     const onSubmitForm = (event) => {
         event.preventDefault();
         successMessage.current.style.display = "none";
-        
+
         if(nameValue.indexOf(" ") !== -1){
             setNameError(true);
         } else {
