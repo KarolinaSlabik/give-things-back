@@ -1,0 +1,37 @@
+@import "src/scss/settings/_colors.scss";
+
+.logOutContainer {
+  width: 414px;
+  height: 253px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 246px auto 0;
+  .logOutTitle {
+    width: 414px;
+    height: 110px;
+    line-height: 55px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    letter-spacing: -0.8px;
+    color: #3C3C3C;
+    text-align: center;
+  }
+  .elementDecorationLogOut {
+    width: 253px;
+    height: 33px;
+    margin-bottom: 35px;
+    background-image: url("../../assets/Decoration.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logOutButton {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 15px 13px;
+    text-align: center;
+    border: 0.75px solid #3C3C3C;
+  }
+}

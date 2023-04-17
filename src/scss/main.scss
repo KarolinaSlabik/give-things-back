@@ -4,6 +4,9 @@
 
 body {
   font-family: $font-base;
+  a {
+    text-decoration: none;
+  }
 }
 @import "./home/homeHeader.scss";
 @import "./home/homeThreeColumns.scss";
@@ -14,3 +17,4 @@ body {
 @import "./home/homeContact.scss";
 @import "./logIn/logIn.scss";
 @import "./signUp/signUp.scss";
+@import "./logOut/logOut.scss";
