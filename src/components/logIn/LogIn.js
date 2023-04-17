@@ -6,15 +6,15 @@ const LogIn = () => {
     return <>
         <div className="loginRegistrationAndNavigation">
             <div className="loginAndRegistration">
-                <LinkRouter to="logowanie" className="logAndRegiLink">Zaloguj</LinkRouter>
-                <LinkRouter to="rejestracja" className="logAndRegiLink">Załóż konto</LinkRouter>
+                <LinkRouter to="../logowanie" relative="path" className="logAndRegiLink">Zaloguj</LinkRouter>
+                <LinkRouter to="../rejestracja" relative="path" className="logAndRegiLink">Załóż konto</LinkRouter>
             </div>
             <div className="navigation">
-                <LinkScroll to="/">Start</LinkScroll>
-                <LinkScroll to="whatIsItAbout">O co chodzi?</LinkScroll>
-                <LinkScroll to="aboutUs">O nas</LinkScroll>
-                <LinkScroll to="whoWeHelp">Fundacja i organizacje</LinkScroll>
-                <LinkScroll to="homeContact">Kontakt</LinkScroll>
+                <LinkRouter to="/">Start</LinkRouter>
+                <LinkRouter to="/whatIsItAbout" relative="path">O co chodzi?</LinkRouter>
+                <LinkRouter to="/aboutUs" relative="path">O nas</LinkRouter>
+                <LinkRouter to="/whoWeHelp" relative="path">Fundacja i organizacje</LinkRouter>
+                <LinkRouter to="/homeContact" relative="path">Kontakt</LinkRouter>
             </div>
         </div>
         <div className="logInContainer">
