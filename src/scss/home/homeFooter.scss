@@ -1,0 +1,48 @@
+@import "src/scss/settings/_colors.scss";
+
+.footer {
+  width: calc(100% - 284px);
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
+  top: -49px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .footerContainer {
+    width: calc(50% + 104px);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .copyrightText {
+      font-size: 18px;
+      color: #3C3C3C;
+    }
+
+    .socialMediaIconBox {
+      width: 80px;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .socialMediaIcon {
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .facebookIcon {
+        background-image: url("../../assets/Facebook@2x.png");
+      }
+
+      .instagramIcon {
+        background-image: url("../../assets/Instagram@2x.png");
+      }
+    }
+  }
+}

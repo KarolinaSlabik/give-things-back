@@ -1,43 +1,68 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link as LinkRouter} from "react-router-dom";
-import {Link as LinkScroll} from "react-scroll";
-
+import DecorativeElement from "../utils/DecorativeElement";
+import LogRegiAndNav from "../utils/LogRegiAndNav";
+import InputAndLabel from "../utils/InputAndLabel";
 const LogIn = () => {
+    const [emailValue, setLoginValue] = useState("");
+    const [passwordValue, setPasswordValue] = useState("");
+
+    const [emailError, setEmailError] = useState(false);
+    const [passwordError, setPasswordError] = useState(false);
+
+    const changelogInEvent = (event) => {
+        setLoginValue(event.target.value);
+    }
+    const changePasswordEvent = (event) => {
+        setPasswordValue(event.target.value);
+    }
+
+    const onSubmitForm = (event) => {
+        event.preventDefault();
+
+        let emailValueValidation = String(emailValue)
+            .toLowerCase()
+            .match(
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+
+        if(emailValueValidation === null){
+            setEmailError(true);
+        } else {
+            setEmailError(false);
+        }
+
+        if(passwordValue.length < 6){
+            setPasswordError(true);
+        } else {
+            setPasswordError(false);
+        }
+
+        if( emailValueValidation !== null && passwordValue.length >= 6) {
+            //zapisanie do pamięci
+        }
+    };
+
     return <>
-        <div className="loginRegistrationAndNavigation">
-            <div className="loginAndRegistration">
-                <LinkRouter to="../logowanie" relative="path" className="logAndRegiLink">Zaloguj</LinkRouter>
-                <LinkRouter to="../rejestracja" relative="path" className="logAndRegiLink">Załóż konto</LinkRouter>
-            </div>
-            <div className="navigation">
-                <LinkRouter to="/">Start</LinkRouter>
-                <LinkRouter to="/whatIsItAbout" relative="path">O co chodzi?</LinkRouter>
-                <LinkRouter to="/aboutUs" relative="path">O nas</LinkRouter>
-                <LinkRouter to="/whoWeHelp" relative="path">Fundacja i organizacje</LinkRouter>
-                <LinkRouter to="/homeContact" relative="path">Kontakt</LinkRouter>
-            </div>
-        </div>
+        <LogRegiAndNav/>
         <div className="logInContainer">
             <div className="logInTitle">
                 Zaloguj się
             </div>
-            <div className="elementDecorationLogIn"></div>
-            <form className="logInForm">
+            <DecorativeElement/>
+            <form className="logInForm" onSubmit={onSubmitForm}>
                 <div className="logInGreyBox">
                     <div className="logInInputBox">
-                        <label htmlFor="email" className="logInLabel">Email</label>
-                        <input type="text" id="email" className="logInInput" style={{marginBottom: "31px"}}/>
-                        <label htmlFor="password" className="logInLabel">Hasło</label>
-                        <input type="text" id="password" className="logInInput"/>
+                        <InputAndLabel type="text" changeValue={changelogInEvent}  value={emailValue} errorText="Podany email jest nieprawidłowy!" error={emailError} labelValue="Email"/>
+                        <InputAndLabel type="password" changeValue={changePasswordEvent} value={passwordValue} errorText="Podane hasło jest za krótkie!" error={passwordError} labelValue="Hasło"/>
                     </div>
                 </div>
                 <div className="logInButtonAndInputSubmitBox">
-                    <LinkRouter to="rejestracja" className="logInButton">Załóż konto</LinkRouter>
-                    <input type="submit" value="Zaloguj się" className="logInButton InputSubmit" />
+                    <LinkRouter to="/rejestracja" className="logInButton">Załóż konto</LinkRouter>
+                    <input type="submit" value="Zaloguj się"  className="logInButton inputSubmit"/>
                 </div>
             </form>
         </div>
     </>
 };
-
 export default LogIn

@@ -1,6 +1,8 @@
 import React, {useRef, useState} from 'react';
 import { Element as ElementScroll } from 'react-scroll';
-import {Link as LinkRouter} from "react-router-dom";
+import DecorativeElement from "../utils/DecorativeElement";
+import InputAndLabel from "../utils/InputAndLabel";
+import HomeFooter from "./HomeFooter";
 const HomeContact = () => {
 
     const [nameValue, setNameValue] = useState("");
@@ -79,27 +81,6 @@ const HomeContact = () => {
         }
     };
 
-    let nameInputElement;
-
-    if(nameError === true) {
-        nameInputElement = <>
-            <input type="text" id="name" onChange={ changeNameValue } placeholder="Krzysztof" className="nameAndEmailInput errorLine"/>
-            <div className="errorText"> Podane imię jest nieprawidłowe!</div>
-        </>
-    } else {
-        nameInputElement = <input type="text" id="name" onChange={ changeNameValue } placeholder="Krzysztof" className="nameAndEmailInput"/>
-    }
-    let emailInputElement;
-
-    if(emailError === true) {
-        emailInputElement = <>
-            <input type="text" id="email" onChange={ changeEmailValue } placeholder="abc@xyz.pl" className="nameAndEmailInput errorLine"/>
-            <div className="errorText"> Podany email jest nieprawidłowy!</div>
-        </>
-    } else {
-        emailInputElement = <input type="text" id="email" onChange={ changeEmailValue } placeholder="abc@xyz.pl" className="nameAndEmailInput"/>
-    }
-
     let messageInputElement;
 
     if(messageError === true) {
@@ -113,24 +94,18 @@ const HomeContact = () => {
     }
 
     return <>
-        <ElementScroll name="homeContact" className="ContactSection">
-            <div className="ContactTransparentApla">
-                <div className="ContactContainer">
-                    <div className="ContactTitle">Skontaktuj się z nami</div>
-                    <div className="ContactDecorations"></div>
+        <ElementScroll name="homeContact" className="contactSection">
+            <div className="contactTransparentApla">
+                <div className="contactContainer">
+                    <div className="contactTitle">Skontaktuj się z nami</div>
+                    <DecorativeElement />
                     <div className="successText" ref={ successMessage } style={{display: "none"}}>
                         Wiadomość została wysłana!<br></br> Wkrótce się skontaktujemy.
                     </div>
-                    <form className="ContactForm" onSubmit={onSubmitForm}>
+                    <form className="contactForm" onSubmit={onSubmitForm}>
                         <div className="inputBigBox">
-                            <div className="inputBox">
-                                <label htmlFor="name" className="nameAndEmailLabel">Wpisz swoje imię</label><br></br>
-                                { nameInputElement }
-                            </div>
-                            <div className="inputBox">
-                                <label htmlFor="email" className="nameAndEmailLabel">Wpisz swój email</label><br></br>
-                                { emailInputElement }
-                            </div>
+                            <InputAndLabel type="text" changeValue={changeNameValue} value={nameValue} placeholderValue="Krzysztof" errorText="Podane imię jest nieprawidłowe!" labelValue="Wpisz swoje imię" error={nameError} />
+                            <InputAndLabel type="text" changeValue={changeEmailValue} value={emailValue} placeholderValue="abc@xyz.pl" errorText="Podany email jest nieprawidłowy!" labelValue="Wpisz swój email" error={emailError}/>
                         </div>
                         <div className="textareaBigBox">
                             <label htmlFor="textArea" className="textareaLabel">Wpisz swoją wiadomość</label> <br></br>
@@ -140,15 +115,7 @@ const HomeContact = () => {
                     </form>
                 </div>
             </div>
-            <div className="footer">
-                <div className="footerContainer">
-                    <div className="copyrightText"> Copyright by Coders Lab </div>
-                    <div className="socialMediaIconBox">
-                        <div className="socialMediaIcon FacebookIcon"></div>
-                        <div className="socialMediaIcon InstagramIcon"></div>
-                    </div>
-                </div>
-            </div>
+            <HomeFooter/>
         </ElementScroll>
     </>
 };

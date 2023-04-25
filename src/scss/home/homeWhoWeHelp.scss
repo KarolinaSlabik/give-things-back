@@ -3,28 +3,21 @@
 .whoWeHelpSection {
   width: 1344px;
   height: 862px;
-  //border: 1px solid red;
   margin: 0 auto 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .whoWeHelpTitle {
     width: 320px;
     height: 52px;
     font-size: 38px;
     line-height: 55px;
     letter-spacing: -0.76px;
-    color: #3C3C3C;
+    color: $darkGrey;
     text-align: center;
   }
-  .whoWeHelpDecoration {
-    width: 253px;
-    height: 33px;
-    background-image: url("../../assets/Decoration.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 25px;
-  }
+
   .whoWeHelpButtonBox {
     width: 750px;
     height: 79px;
@@ -32,19 +25,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .whoWeHelpButton {
       width: auto;
       height: 79px;
       line-height: 26px;
       font-size: 24px;
-      color: #3C3C3C;
+      color: $darkGrey;
       padding-left: 42px;
       padding-right: 42px;
       display: flex;
       align-items: center;
       justify-content: center;
+
       &:hover {
-        border: 0.75px solid #3C3C3C;
+        border: 0.75px solid $darkGrey;
       }
     }
   }

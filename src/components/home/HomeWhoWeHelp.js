@@ -4,6 +4,7 @@ import WhoWeHelpOrganization from "./WhoWeHelpOrganization";
 import listOfFoundations from "../utils/listOfFoundations";
 import listOfOrganizations from "../utils/listOfOrganizations";
 import listOfLocalCollections from "../utils/listOfLocalCollections";
+import DecorativeElement from "../utils/DecorativeElement";
 
 const HomeWhoWeHelp = () => {
     const [clickedButton, setClickedButton] = useState(0);
@@ -41,7 +42,7 @@ const HomeWhoWeHelp = () => {
             <div className="whoWeHelpTitle">
                 Komu pomagamy?
             </div>
-            <div className="whoWeHelpDecoration"></div>
+            <DecorativeElement />
             <div className="whoWeHelpButtonBox">
                 <div className="whoWeHelpButton" onClick={foundationsClickedButton}>
                     Fundacjom

@@ -43,5 +43,4 @@ const HomeThreeColumns = () => {
         </section>
     </>
 };
-
 export default HomeThreeColumns

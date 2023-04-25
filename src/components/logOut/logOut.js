@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link as LinkRouter} from "react-router-dom";
-
+import DecorativeElement from "../utils/DecorativeElement";
 const LogOut = () => {
     return <>
         <div className="loginRegistrationAndNavigation">
@@ -20,7 +20,7 @@ const LogOut = () => {
             <div className="logOutTitle">
                 Wylogowanie nastąpiło pomyślnie!
             </div>
-            <div className="elementDecorationLogOut"></div>
+            <DecorativeElement />
             <LinkRouter to="/" className="logOutButton">Strona główna</LinkRouter>
         </div>
     </>

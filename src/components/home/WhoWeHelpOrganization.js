@@ -1,6 +1,5 @@
 import ReactPaginate from "react-paginate";
 import React, { useEffect, useState } from "react";
-// import listOfFoundations from "../utils/listOfFoundations";
 
 function Items({ currentItems }) {
     return (

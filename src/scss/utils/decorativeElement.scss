@@ -1,0 +1,10 @@
+@import "src/scss/settings/_colors.scss";
+
+.decorativeElement {
+  width: 253px;
+  height: 33px;
+  background-image: url("../../assets/Decoration.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 25px;
+}

@@ -1,0 +1,27 @@
+@import "src/scss/settings/_colors.scss";
+
+.loginRegistrationAndNavigation {
+  width: 683px;
+  height: 95px;
+  position: absolute;
+  top: 37px;
+  right: 142px;
+
+  .navigation {
+    text-align: right;
+    position: relative;
+    top: -26px;
+
+    a {
+      font-size: 18px;
+      line-height: 24px;
+      margin-left: 15px;
+      padding: 10px;
+      color: $darkGrey;
+
+      &:hover {
+        border: 0.75px solid $darkGrey;
+      }
+    }
+  }
+}

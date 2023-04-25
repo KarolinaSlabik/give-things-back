@@ -1,0 +1,22 @@
+@import "src/scss/settings/_colors.scss";
+
+
+.loginAndRegistration {
+  text-align: right;
+  position: relative;
+  top: -24px;
+
+  .logAndRegiLink {
+    text-decoration: none;
+    margin-left: 15px;
+    color: $mediumGrey2;
+    font-size: 14px;
+    line-height: 85px;
+    padding: 10px;
+
+    &:hover {
+      border: 0.75px solid $yellowColor;
+    }
+  }
+}
+

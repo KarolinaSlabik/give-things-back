@@ -1,30 +1,19 @@
 import React from 'react';
 import { Link as LinkRouter } from  "react-router-dom";
-import { Link as LinkScroll } from 'react-scroll';
+import DecorativeElement from "../utils/DecorativeElement";
+import LogRegiAndNav from "../utils/LogRegiAndNav";
 const HomeHeader = () => {
     return <>
         <header>
             <div className="headerImage"></div>
             <div className="headerContent">
-                <div className="loginRegistrationAndNavigation">
-                    <div className="loginAndRegistration">
-                        <LinkRouter to="logowanie" className="logAndRegiLink">Zaloguj</LinkRouter>
-                        <LinkRouter to="rejestracja" className="logAndRegiLink">Załóż konto</LinkRouter>
-                    </div>
-                    <div className="navigation">
-                        <LinkScroll to="/">Start</LinkScroll>
-                        <LinkScroll to="whatIsItAbout">O co chodzi?</LinkScroll>
-                        <LinkScroll to="aboutUs">O nas</LinkScroll>
-                        <LinkScroll to="whoWeHelp">Fundacja i organizacje</LinkScroll>
-                        <LinkScroll to="homeContact">Kontakt</LinkScroll>
-                    </div>
-                </div>
+                <LogRegiAndNav/>
                 <div className="headerTitleAndButtonsBox">
-                    <h1>
+                    <div className="headerTitle">
                         Zacznij pomagać! <br></br>
                         Oddaj niechciane rzeczy w zaufane ręce
-                    </h1>
-                    <div className="headerDecorationImage"></div>
+                    </div>
+                    <DecorativeElement />
                     <div className="headerButtonBox">
                         <LinkRouter to="logowanie" className="headerButton">ODDAJ<br></br> RZECZY</LinkRouter>
                         <LinkRouter to="logowanie" className="headerButton">ZORGANIZUJ ZBIÓRKĘ</LinkRouter>

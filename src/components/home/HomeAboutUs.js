@@ -1,5 +1,6 @@
 import React from 'react';
 import { Element as ElementScroll } from 'react-scroll';
+import DecorativeElement from "../utils/DecorativeElement";
 
 const HomeAboutUs = () => {
     return <>
@@ -9,9 +10,7 @@ const HomeAboutUs = () => {
                     <div className="aboutUsTitle">
                         O nas
                     </div>
-                    <div className="decorationElement">
-
-                    </div>
+                    <DecorativeElement />
                     <div className="aboutUsText">
                         Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.
                         Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.
