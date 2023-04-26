@@ -1,10 +1,10 @@
 import React from 'react';
 import LogOutAndRegistrationMessage from "../utils/LogOutAndRegistrationMessage";
-const LogOut = () => {
+const RegistrationMessage = () => {
     return <>
         <LogOutAndRegistrationMessage>
-            Wylogowanie nastąpiło pomyślnie!
+            Rejestracja zakończona sukcesem!
         </LogOutAndRegistrationMessage>
     </>
 };
-export default LogOut
+export default RegistrationMessage

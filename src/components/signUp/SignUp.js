@@ -50,7 +50,22 @@ const SignUp = () => {
         }
 
         if( emailValueValidation !== null && passwordValue.length >= 6 && repeatPasswordValue === passwordValue) {
-            //zapisanie do pamięci
+            const users = JSON.parse(localStorage.getItem("users") || "[]");
+            let findUser = false;
+            users.forEach(element => {
+                if(element.email === emailValue) {
+                    findUser = true;
+                    return false;
+                }
+            });
+            if(findUser === true) {
+                setEmailError(true);
+            } else {
+                let user = {email : emailValue, password : passwordValue};
+                let allUsersAndNewUser = JSON.stringify([...users, user]);
+                localStorage.setItem("users", allUsersAndNewUser);
+                window.location.href = '/zarejestrowano';
+            }
         }
     };
 
