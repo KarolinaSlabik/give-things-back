@@ -5,7 +5,7 @@ import DecorativeElement from "../utils/DecorativeElement";
 
 const Home4EasySteps = () => {
     return <>
-        <ElementScroll name="whatIsItAbout" className="fourEasyStepsSection">
+        <ElementScroll id="whatIsItAbout" name="whatIsItAbout" className="fourEasyStepsSection">
             <div className="fourEasyStepsTitle">
                 Wystarczą 4 proste kroki
             </div>

@@ -4,7 +4,7 @@ import DecorativeElement from "../utils/DecorativeElement";
 
 const HomeAboutUs = () => {
     return <>
-        <ElementScroll name="aboutUs" className="aboutUsSection">
+        <ElementScroll id="aboutUs" name="aboutUs" className="aboutUsSection">
             <div className="aboutUsTextContainer">
                 <div className="aboutUsTextBox">
                     <div className="aboutUsTitle">

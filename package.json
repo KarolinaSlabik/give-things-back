@@ -13,6 +13,7 @@
     "react-dom": "^18.2.0",
     "react-paginate": "^8.1.5",
     "react-router-dom": "^6.10.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "reset.css": "^2.0.2",

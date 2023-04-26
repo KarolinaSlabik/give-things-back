@@ -94,7 +94,7 @@ const HomeContact = () => {
     }
 
     return <>
-        <ElementScroll name="homeContact" className="contactSection">
+        <ElementScroll id="homeContact" name="homeContact" className="contactSection">
             <div className="contactTransparentApla">
                 <div className="contactContainer">
                     <div className="contactTitle">Skontaktuj się z nami</div>

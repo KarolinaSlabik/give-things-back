@@ -38,7 +38,7 @@ const HomeWhoWeHelp = () => {
     };
 
     return <>
-        <ElementScroll name="whoWeHelp" className="whoWeHelpSection">
+        <ElementScroll id="whoWeHelp" name="whoWeHelp" className="whoWeHelpSection">
             <div className="whoWeHelpTitle">
                 Komu pomagamy?
             </div>
